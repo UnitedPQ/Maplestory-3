@@ -1,0 +1,2 @@
+insert into core_draw_results (`module`, `activityId`, `nickname`, `userId`, `date`, `prizeId`, `isLuck`, `isMobile`, `deadline`, `createTime`, `updateTime`) values ('karaoke', 0, 'Chips是个蛇夫座', 412, '20141106', 14, 1, 1, 1415548799, 1415244445, 1415244445);
+insert into core_draw_results (`module`, `activityId`, `nickname`, `userId`, `date`, `prizeId`, `isLuck`, `isMobile`, `deadline`, `createTime`, `updateTime`) values ('karaoke', 0, '李婵娟-Meggie', 407, '20141106', 14, 1, 1, 1415548799, 1415244445, 1415244445);

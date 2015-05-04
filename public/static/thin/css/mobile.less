@@ -1,0 +1,95 @@
+@import '../../common/css/common.less';
+
+body {
+    background: #00dbff url(../img/mobile/bgb.png) no-repeat 50% 100%;
+    background-size: 100% auto;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    background: url(../img/mobile/bgt.png) no-repeat 50% 0;
+    background-size: 100% auto;
+
+    &, .table-cell {
+        .full-box;
+        .relative;
+        vertical-align: middle;
+    }
+}
+
+.logo {
+    .absolute;
+    right: 3%;
+    top: 10px;
+    width: 30%;
+}
+
+
+/*** index ***/
+nav {
+    top: 11.2%;
+    left: 5%;
+
+    a {
+        .z;
+        color: #fff;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-left: 1px solid #00a7cb;
+        border-right: 1px solid #80eeff;
+
+        &:first-child {
+            padding-left: 0;
+            border-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            border-right: 0;
+        }
+    }
+}
+
+.box {
+    .relative;
+
+    .box-bg {
+        .z;
+        width: 100%;
+    }
+}
+
+.icon1 { width: 12.19%; left: 56.56%; top: 0.94%; }
+.icon2 { width: 8.75%; left: 79.69%; top: 9.84%; }
+.icon3 { width: 11.72%; left: 85.16%; top: 45.63%; }
+.icon4 { width: 9.38%; left: 72.97%; top: 76.25%; }
+.icon5 { width: 12.19%; left: 20.94%; top: 90.16%; }
+.icon6 { width: 12.19%; left: 2.03%; top: 33.91%; }
+.icon7 { width: 8.13%; left: 18.91%; top: 8.13%; }
+
+.he { width: 12.5%; left: 14.84%; top: 33.44%; }
+
+.title1 { width: 46.41%; left: 24.84%; top: 17.34%; }
+.title2 { width: 65%; left: 17.03%; top: 34.06%; }
+.title3 { width: 38.91%; left: 28.91%; top: 47.81%; }
+
+.text { width: 38.59%; left: 9.06%; top: 55.47%; }
+
+.index-bottom { width: 100%; bottom: 10px; }
+.start {
+    display: block;
+    width: 50%;
+    margin: auto;
+
+    .startbg {
+        width: 100%;
+    }
+
+    .starttxt {
+        width: 28.75%;
+        left: 35.63%;
+        top: 0;
+    }
+}
+/*** end index ***/

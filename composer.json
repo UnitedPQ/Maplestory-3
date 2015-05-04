@@ -1,0 +1,15 @@
+{
+    "name": "fwkit/weixin",
+    "require": {
+        "imagine/imagine": "0.7.*@dev",
+        "phalcon/incubator": "dev-master",
+        "fwkit/wechat": "dev-master",
+        "fwkit/weibo": "1.0"
+    },
+    "authors": [
+        {
+            "name": "Fung Wing Kit",
+            "email": "wengee@gmail.com"
+        }
+    ]
+}
