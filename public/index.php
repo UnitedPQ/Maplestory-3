@@ -56,7 +56,6 @@ try {
         }
     }
     $application->registerModules($modules);
-
     echo $application->handle()->getContent();
 
 } catch (Exception $e) {

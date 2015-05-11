@@ -7,9 +7,9 @@ return new \Phalcon\Config(array(
     'database' => array(
         'adapter' => 'Mysql',
         'host' => $develop ? '127.0.0.1' : 'mysql.db.vivo.com.cn',
-        'username' => 'activity',
-        'password' => 'OxOZgReDJvXVHqpk',
-        'dbname' => 'activity',
+        'username' => 'root',
+        'password' => '123456',
+        'dbname' => 'maplestory',
         'charset' => 'utf8',
         'logpath' => APP_PATH . 'cache/logs/',
     ),
@@ -50,9 +50,15 @@ return new \Phalcon\Config(array(
             'sessionKey' => 'VyD2l]cUwL_lK#5yd!}dKUr#',
         ),
 
-        'upload' => array(
+        /*'upload' => array(
             'basePath' => $develop ? WEB_PATH . 'uploaded/' : '/files/activity/attachments/',
             'baseUri' => $develop ? '/uploaded/' : 'http://files.vivo.com.cn/activity/attachments/',
+            'dirRule' => 'Y/m-d/',
+            'sizeLimit' => 1024 * 1024 * 5,
+        ),*/
+        'upload' => array(
+            'basePath' => WEB_PATH . 'uploaded/',
+            'baseUri' => '/uploaded/',
             'dirRule' => 'Y/m-d/',
             'sizeLimit' => 1024 * 1024 * 5,
         ),
