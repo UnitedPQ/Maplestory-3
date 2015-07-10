@@ -5,6 +5,6 @@
     $raw_json = file_get_contents('php://input');  
     print_r(json_decode($raw_json, true));  
       
-    echo shell_exec("cd $www_folder ; su apache ; whoami ; git pull 2>&1");  
+    echo shell_exec("cd $www_folder ; whoami ; sudo -u apache git pull 2>&1");  
 
 ?>
