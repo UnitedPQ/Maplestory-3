@@ -27,7 +27,7 @@
     2、打开并读取文件内容
     ********************/
     $file  = 'git.log';//要写入文件的文件名（可以是任意文件名），如果文件不存在，将会创建一个
-    $content = "git pull:".@date("Y-m-d H:i:s")."\r\n\r\n";
+    $content = "git pull:".@date("Y-m-d H:i:s")."\r\n";
 
     if($f  = file_put_contents($file, $content,FILE_APPEND)){// 这个函数支持版本(PHP 5) 
         echo "写入成功。<br />";
