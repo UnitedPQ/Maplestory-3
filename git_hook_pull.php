@@ -1,7 +1,7 @@
 <?php  
     //三分钟
     set_time_limit(180);
-    ini_set("memory_limit", "150M");
+    //ini_set("memory_limit", "150M");
     $www_folder = "/var/www/html/Maplestory"; 
     //$git = "/usr/bin/git"; 
       
@@ -9,7 +9,7 @@
     $raw_json = file_get_contents('php://input');  
     print_r(json_decode($raw_json, true));  
       
-    echo shell_exec("cd $www_folder ; whoami ; git pull 2>&1 ; yes");  
+    echo shell_exec("cd $www_folder ; whoami ; git pull 2>&1 ; echo yes;");  
 
     
 /*
