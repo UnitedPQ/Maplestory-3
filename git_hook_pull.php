@@ -8,11 +8,13 @@
       
     echo shell_exec("cd $www_folder ; whoami ; $git pull 2>&1");  
 */
+    //三分钟
+    set_time_limit(180);
     error_reporting ( E_ALL );
 
 	$dir = '/var/www/html/Maplestory/';//该目录为git检出目录
 
-	$handle = popen('cd '.$dir.'; whoami && git pull 2>&1 ; yes','r');
+	$handle = popen('cd '.$dir.'; whoami ; git pull 2>&1 ; yes','r');
 
 	$read = stream_get_contents($handle);
 
