@@ -10,6 +10,7 @@
 */
     //三分钟
     set_time_limit(180);
+    ini_set("memory_limit", "150M");
     error_reporting ( E_ALL );
 
 	$dir = '/var/www/html/Maplestory/';//该目录为git检出目录
