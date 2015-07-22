@@ -19,7 +19,7 @@
 	$read = stream_get_contents($handle);
 
 	printf($read);
-
+    unset($read);
 	pclose($handle);
 
 
